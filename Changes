@@ -1,5 +1,46 @@
 Revision history for perl module SockJS
 
+{{$NEXT}}
+
+0.10 2018-12-07T12:01:32Z
+
+ - fix issue with not fully closed sockets on websocket aborts
+
+0.09 2018-12-02T11:11:02Z
+
+ - bump versions of HTTP::Tiny and List::Util
+
+0.08 2018-12-02T09:25:09Z
+
+ - add missing IO::Compress::Deflate dependency (manwar)
+ - split dependencies into runtime and test
+ - set allow_nonref to 0 (defaults to 1 as of JSON::XS 4.0)
+
+0.07 2018-09-29T11:16:16Z
+
+ - pass $env to handler callback
+
+0.06 2018-08-26T18:25:58Z
+
+ - use IO::String in tests for more compatibility with older perls
+ - add more test dependencies
+ - add Build.PL to make it installable from git
+ - add travis
+
+0.05 2018-08-26T17:55:24Z
+
+ - do not use 5.10 features
+ - add test dependencies
+
+0.04 2018-08-26T12:24:41Z
+
+ - set license (manwar)
+ - make sure handler object exists in websocket callbacks
+
+0.03 2018-08-26T06:25:23Z
+
+ - upgrade to SockJS 1.* version
+
 0.01 2013-04-06
 
  - Initial release
